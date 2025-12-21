@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diyarbakır Yenilebilir Bitkiler WebGIS Projesi</title>
+    
+    <meta name="description" content="Diyarbakır'ın Kaybolan Lezzet ve Şifa Hafızası: Yenilebilir Doğal Bitkilerin Etnobotanik Envanteri ve Web Tabanlı İnteraktif Coğrafi Veritabanı Oluşturulması">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <header>
+        <h1>Diyarbakır Biyokültürel Miras Haritası</h1>
+        <p class="subtitle">Yenilebilir ve Şifalı Bitkilerin Etnobotanik Envanteri</p>
+    </header>
+
+    <main class="container">
+        <section id="map-container">
+            <h2>Bitki Dağılım Haritası</h2>
+            <div id="map"></div>
+        </section>
+
+   <section id="content-area">
+            <h2>Diyarbakır Bitki Ansiklopedisi</h2>
+            
+<div id="search-container">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" placeholder="Bitki adı, yöresel ad veya Latince ad ara...">
+                </div>
+            </div>
+            
+            <div id="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Hepsi (10)</button>
+                <button class="filter-btn" data-filter="yemek">🍲 Yemeklik</button>
+                <button class="filter-btn" data-filter="sifa">⚕️ Şifalı</button>
+            </div>
+            <div id="plant-list">
+                </div>
+            
+            <hr style="margin: 20px 0; border: 0; border-top: 1px dashed #ccc;">
+
+            <div id="plant-details-view">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proje: Diyarbakır'ın Kaybolan Lezzet ve Şifa Hafızası | Kaynak: Açık Kaynak Kodlu Teknolojiler (QGIS, Leaflet.js, HTML/CSS/JS) kullanılmıştır. [cite: 9, 43, 104, 105, 107]</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
